@@ -1,7 +1,6 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> positive = new HashMap<>(); // hashMap의 최대 크기 2의 30승 (1억개가 조금 넘음)
-        HashMap<Integer, Integer> negative = new HashMap<>();
 
         int n, t;
         int[] answer = new int[2];
@@ -14,14 +13,9 @@ class Solution {
                 break;
             }
 
-            if(negative.containsKey(t)) {
-                answer[0] = negative.get(t);
-                answer[1] = i;
-                break;
-            }
+            
 
-            if (n >= 0) positive.put(n, i);
-            else negative.put(n, i);
+            positive.put(n, i);
         }
 
         return answer;
