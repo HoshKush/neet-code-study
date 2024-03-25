@@ -26,7 +26,7 @@ class Solution {
         }
       }
     }
-    if(count.getOrDefault(0, 0) >= 3) answer.add(triplet(0, 0, 0));
+    if(count.getOrDefault(0, 0) >= 3) answer.add(triplet(0, 0, 0));ㄴ
     return answer;
   }
 
