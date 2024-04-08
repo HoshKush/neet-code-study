@@ -20,9 +20,9 @@ class Solution {
             cur = cur.next;
             idx++;
         }
-        head.next = l[idx - 1];
-        cur = l[idx - 1];
-        for(int i = 2; i < idx; i++) {
+
+        cur = head;
+        for(int i = 1; i < idx; i++) {
             if(i % 2 == 0) {
                 cur.next = l[i / 2];
                 cur = cur.next;
