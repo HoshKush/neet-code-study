@@ -21,6 +21,6 @@ class Solution {
         if(!isSameTree(p.left, q.left)) {
             return false;
         }
-        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        return isSameTree(p.right, q.right);
     }
 }
